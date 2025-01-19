@@ -1,0 +1,13 @@
+{
+  "name": "funda-playwright-tests",
+  "version": "1.0.0",
+  "description": "Automated tests for Funda website",
+  "scripts": {
+      "test": "playwright test",
+      "test:headed": "playwright test --headed",
+      "show-report": "playwright show-report"
+  },
+  "devDependencies": {
+      "@playwright/test": "^1.41.0"
+  }
+}
