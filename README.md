@@ -64,16 +64,19 @@ funda-playwright-tests/
 
 ### Test Sequence:
 
-1. First, run the login test which requires manual CAPTCHA intervention:
+1. First, run the login test:
 ```bash
 npx playwright test login.spec.js --headed
 ```
-When prompted by the CAPTCHA challenge, solve it manually. The test will wait for your intervention.
 
 2. After successful login, run the map search tests:
 ```bash
 npx playwright test map-search.spec.js
 ```
+When prompted by the CAPTCHA challenge, solve it manually. The test will wait for your intervention.
+
+**Imp Note:**
+The Test is supposed to fail as the requirement is not correct the map cannot zoom and select a list of properties.
 
 3. Then run the list view tests:
 ```bash
